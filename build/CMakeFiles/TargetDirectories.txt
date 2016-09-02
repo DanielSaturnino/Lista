@@ -1,1 +1,0 @@
-/home/daniel/Documentos/Lista/build/CMakeFiles/lista.dir
