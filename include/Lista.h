@@ -3,6 +3,8 @@ Nombre: Daniel Manzano Saturnino
 Descripcion: Este programa es una
 lista contiene todos los metods que una
 estructura de tipo lista debe de llevar
+puedes manejar la estructura haciendo llamar 
+sus metoodos 
 Atributos: NODO H Y NODO T
 */
 #include "Nodo.h"

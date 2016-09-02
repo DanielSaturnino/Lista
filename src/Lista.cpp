@@ -1,8 +1,11 @@
+/**
+Daniel Manzano Saturnino
+*/
 #include "Lista.h"
 /*
 Constructor:
-@Parametros:No recibe ningun parametro
-@Result: No devuelve nada
+@Parametros: void
+@Result: void
 Crea un nodo de con H y T apuntando a NULL
 */
 	Lista::Lista()
@@ -12,8 +15,8 @@ Crea un nodo de con H y T apuntando a NULL
 	}
 /*
 Constructor
-@Parametros:un de tipo entero
-@Result: No devuelve nada
+@Parametros:int Dato
+@Result: void
 Crea un nodo que apunta a H y a T
 */
 
@@ -27,8 +30,8 @@ Crea un nodo que apunta a H y a T
 
 /*
 Lista Vacia
-@Parametros: No recibe parametros
-@Result: DEVUELVE UN TRUE O UN FALSE DEPENDIENDO DEL CASO
+@Parametros: void
+@Result: bool True o False
 Comprueba si la lista esta vacia revisando los apuntadores
 de H y T si apuntan a NULL devuelve un true de lo contrario
 un false
@@ -41,8 +44,8 @@ un false
 	}
 /*
 AddInicio
-@Parametros: recibe un dato de tipo entero 
-@Result: No devuelve nada
+@Parametros: int Dato
+@Result: Void
 Este metodo crea un nodo auxiliar que apunta a H 
 llama al metodo lista vacia si se encuentra vacia 
 agrega el elemento y asigna a T el nodo creado
@@ -59,8 +62,8 @@ de lo contrario H se le asigna el nuevo nodo
 	}
 /*
 AddFinal
-@Parametros:Recibe un dato de tipo entero
-@Result: No devuelve nada
+@Parametros: int Dato
+@Result: void
 Crea un nuevo nodo con dato nuevo, verifica si 
 la lista esta vacia si si lo esta a H y T se le asigna
  el nuevo nodo, de lo contrario a T apunta a l nuevo nodo
@@ -81,8 +84,8 @@ la lista esta vacia si si lo esta a H y T se le asigna
 	}
 /*
 AddRef
-@Parametros:Dos datos de tipo entero 
-@Result: No devuelve nada
+@Parametros: int Dato, int Ref
+@Result: void
 Verifica si la lista esta vacia llamando al metodo lista Vacia
 si esto se cumple crea un dato con un dato a H se le asigna 
 el nodo creado y finalmente T es igual a H e imprime una leyenda
@@ -125,8 +128,8 @@ si esto no se cumple arroja una leyenda
 	}
 /*
 Remove Lista
-@Parametros: No Recibe
-@Result: Devuelve un entero
+@Parametros: void
+@Result: int Dato
 verifica que la lista este vacia con el metodo lista Vacia
 Si se cumple arroja una leyenda y regresamos un cero
 si no creamos una variablede tipo entero y le asignamos
@@ -152,8 +155,8 @@ si no solo retorna un dato
 	}
 /*
 RemoveFinal
-@Parametros: no tiene
-@Result: Devuelve un entero
+@Parametros: void
+@Result: int Dato 
 Verifica si la lista esta vacia con el metodo Lista Vacia
 si esta vacia da una leyenda y retorna un cero 
 si no crea un dato se le asigna el dato de T 
@@ -190,8 +193,8 @@ al final regresa un dato
 	}
 /*
 RemoveRef
-@Parametros:Recibe un entero 
-@Result: devuelve un entero
+@Parametros:int Ref
+@Result: int Dato
 Verifica si la lista esta vacia con el metodo Lista Vacia
 si esta vacia retorna UN NuLL si no va crear dos nodos el primero 
 se recorrera desde H hasta el dato dado por   el usuario
@@ -238,8 +241,8 @@ retorna un Dato
 	}
 /*
 Lista Vacia
-@Parametros: No recibe nada
-@Result: Devuelve un entero
+@Parametros: void
+@Result: int Dato
 Verifica si la liasta esta vacia con el metodo Lista vacia
 si lo esta envia una leyenda y retorna un cero si
 no a H y T los apunta a NULL e imprime una leyenda
@@ -261,8 +264,8 @@ retorna un cero
 	}
 /*
 Buscar elemento 
-@paramametros: Recibe un dato de tipo entero 
-@Result: devuelve un nodo
+@paramametros: int Ref
+@Result: Nodo*
 Verifica con el metodo lista vacia si la lista esta vacia
 si esta arroja una leyenda y devuelve un NULL
 de lo contrario crea un nodo y lo recorre hasta encontrar
@@ -296,8 +299,8 @@ creado
 	}
 /*
 Show
-@parametros: no recibe nada
-@Result: no devuelve nada
+@parametros: void
+@Result: void
 Crea un nodo auxiliar que apunta a H
 y este nodo recorre la lista hasta llegar a NULL;
 caba vez que cambia imprime el dato donde se encuentra

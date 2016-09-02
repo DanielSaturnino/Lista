@@ -1,3 +1,6 @@
+/**
+NOMBRE: Daniel Manzano Saturnino
+*/
 #include <iostream>
 
 class Nodo
